@@ -32,6 +32,6 @@ class CashRegister
       result = "There is no discount to apply."
      end 
     return result 
-end 
+  end 
 end 
  
