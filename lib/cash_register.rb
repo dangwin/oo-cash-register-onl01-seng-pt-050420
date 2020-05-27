@@ -36,7 +36,7 @@ class CashRegister
   
 
     def item 
-      return self.shopping_cart
+      return shopping_cart
     end 
   
   
