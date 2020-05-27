@@ -31,7 +31,7 @@ class CashRegister
      else 
       result = "There is no discount to apply."
      end 
-     result 
+    return result 
 end 
  end 
  
