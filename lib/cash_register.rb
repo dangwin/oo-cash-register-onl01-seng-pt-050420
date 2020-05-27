@@ -8,6 +8,7 @@ class CashRegister
 
     @total = 0
     @discount = discount if discount != 0
+    @shopping_cart = []
    end 
    
    def add_item(item, price, quantity = 1)
