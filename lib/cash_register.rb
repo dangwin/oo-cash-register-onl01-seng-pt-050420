@@ -34,6 +34,7 @@ class CashRegister
     return result 
   end 
   
+    def item 
   
   
   
