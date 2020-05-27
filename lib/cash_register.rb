@@ -1,6 +1,6 @@
 class CashRegister 
   
- attr_accessor :discount, :total, :item, :price 
+ attr_accessor :discount, :total, :item, :price, :shopping_cart 
  
 
  
@@ -34,8 +34,10 @@ class CashRegister
     return result 
   end 
   
+
     def item 
-  
+      return self.shopping_cart
+    end 
   
   
 end 
