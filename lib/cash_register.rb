@@ -54,7 +54,16 @@ class CashRegister
     else 
       amount_reduced = @cart[-1][:price]
       if @cart[-1][:quantity] > 1 
-        
+        quantity = @cart[-1][:quantity]
+        @total -= amount_reduced * quantity
+      else
+        @total -= amount_reduced
+      end
+      @basket.delete(@basket[-1])
+      @items.delete(@items[-1])
+    end
+    @total
+  end
     
     
     
