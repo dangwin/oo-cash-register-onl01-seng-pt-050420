@@ -37,7 +37,7 @@ class CashRegister
 
     def items 
       
-      return i_info[:name]
+      return 
     end 
   
   
