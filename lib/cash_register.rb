@@ -36,7 +36,8 @@ class CashRegister
   
 
     def items 
-      return shopping_cart
+      
+      return i_info[:name]
     end 
   
   
