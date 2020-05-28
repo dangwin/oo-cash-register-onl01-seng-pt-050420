@@ -1,6 +1,6 @@
 class CashRegister 
   
- attr_accessor :discount, :total, :item, :price, :shopping_cart, 
+ attr_accessor :discount, :total, :item, :price, :shopping_cart
  
 
  
@@ -48,27 +48,8 @@ class CashRegister
     end 
   
   def void_last_transaction
-    if @cart.length == 0 
-      return 0.to_f 
-    else 
-      amount_reduced = @cart[-1][:price]
-      if @cart[-1][:quantity] > 1 
-        quantity = @cart[-1][:quantity]
-        @total -= amount_reduced * quantity
-      else
-        @total -= amount_reduced
-      end
-      @cart.delete(@cart[-1])
-      @items.delete(@items[-1])
-    end
-    @total
+
   end
-    
-    
-    
-    
-    
-  
-end 
+
 end 
  
