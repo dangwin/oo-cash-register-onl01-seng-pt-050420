@@ -48,7 +48,10 @@ class CashRegister
       
     end 
   
-  
+  def void_last_transaction
+    quantity = transaction[2]
+    quantity.times do
+      
   
   
   
