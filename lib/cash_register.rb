@@ -49,7 +49,8 @@ class CashRegister
     end 
   
   def void_last_transaction
-    @total -= 
+    if @cart.length == 0 
+      return 0.to_f 
     
     
     
