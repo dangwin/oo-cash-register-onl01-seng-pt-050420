@@ -1,6 +1,6 @@
 class CashRegister 
   
- attr_accessor :discount, :total, :item, :price, :shopping_cart, :cart 
+ attr_accessor :discount, :total, :item, :price, :shopping_cart, 
  
 
  
@@ -9,7 +9,6 @@ class CashRegister
     @total = 0
     @discount = discount if discount != 0
     @shopping_cart = []
-    @cart = []
    end 
    
    def add_item(item, price, quantity = 1)
