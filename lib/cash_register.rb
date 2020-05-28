@@ -9,7 +9,7 @@ class CashRegister
     @total = 0
     @discount = discount if discount != 0
     @shopping_cart = []
-    @cart = cart 
+    @cart = []
    end 
    
    def add_item(item, price, quantity = 1)
@@ -53,6 +53,8 @@ class CashRegister
       return 0.to_f 
     else 
       amount_reduced = @cart[-1][:price]
+      if @cart[-1][:quantity] > 1 
+        
     
     
     
