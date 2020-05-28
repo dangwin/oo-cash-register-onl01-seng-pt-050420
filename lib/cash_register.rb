@@ -59,7 +59,7 @@ class CashRegister
       else
         @total -= amount_reduced
       end
-      @basket.delete(@basket[-1])
+      @cart.delete(@cart[-1])
       @items.delete(@items[-1])
     end
     @total
