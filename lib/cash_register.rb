@@ -1,6 +1,6 @@
 class CashRegister 
   
- attr_accessor :discount, :total, :item, :shopping_cart
+ attr_accessor :discount, :total, :item, :shopping_cart, :@last_transaction_amount
  
 
  
@@ -19,7 +19,7 @@ class CashRegister
      
      @shopping_cart << i_info
    
-     
+     @last_transaction_amount = price * quantity
      @total += price * quantity
      
    end 
@@ -49,7 +49,7 @@ class CashRegister
   
   def void_last_transaction
   
-
+  @total -= @last_transaction_amount 
   end
 
 end 
