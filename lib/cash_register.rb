@@ -1,6 +1,6 @@
 class CashRegister 
   
- attr_accessor :discount, :total, :item, :price, :shopping_cart, :for_items 
+ attr_accessor :discount, :total, :item, :price, :shopping_cart
  
 
  
@@ -19,7 +19,7 @@ class CashRegister
      i_info[:quantity] = quantity
      
      @shopping_cart << i_info
-     @for_items << i_info[:name]
+   
      
      @total += price * quantity
      
@@ -38,8 +38,14 @@ class CashRegister
   
 
     def items 
+      names = []
+      @shopping_cart.each do |i_info|
+        for qty in 1.. i_info[:quantity]
+        names << i_info[:name]
+      end 
+    end
+    name 
       
-      return @for_items
     end 
   
   
