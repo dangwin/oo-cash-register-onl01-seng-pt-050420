@@ -38,7 +38,7 @@ class CashRegister
   
 
     def items 
-      names = []
+      name = []
       @shopping_cart.each do |i_info|
         for qty in 1.. i_info[:quantity]
         names << i_info[:name]
