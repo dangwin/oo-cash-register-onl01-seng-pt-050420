@@ -51,6 +51,8 @@ class CashRegister
   def void_last_transaction
     if @cart.length == 0 
       return 0.to_f 
+    else 
+      amount_reduced = @cart[-1][:price]
     
     
     
